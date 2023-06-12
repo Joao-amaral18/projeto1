@@ -12,7 +12,7 @@ if (isset($_POST['update']))
     $horario_inicio = $_POST['horario_inicio'];
     $horario_fim = $_POST['horario_fim'];
 
-    $sqlUpdate = "UPDATE users SET nome='$nome', email='$email', tel='$te   l', laboratorio='$laboratorio', data_reserva='$data_reserva', horario_inicio='$horario_inicio', horario_fim='$horario_fim' WHERE id='$id'";
+    $sqlUpdate = "UPDATE users SET nome='$nome', email='$email', tel='$tel', laboratorio='$laboratorio', data_reserva='$data_reserva', horario_inicio='$horario_inicio', horario_fim='$horario_fim' WHERE id='$id'";
 
     $result = $conexao->query($sqlUpdate);
 }
